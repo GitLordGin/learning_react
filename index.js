@@ -18,13 +18,23 @@ function VanilaAPP() {
 
 function ReactAPP() {
   // This is declarative aproach
-  ReactDOM.render(
+  const root = document.getElementById("root");
+  const page = (
     <div>
-      <NavBar />
-      <MainContent />
-    </div>,
-    document.getElementById("root")
+        <NavBar />
+        <MainContent />
+    </div>
   );
+  ReactDOM.render(page, root);
+}
+
+function CompareJSXWithJS() {
+  const header2 = document.createElement("h1");
+  header2.textContent = "JS";
+  header2.className = "header";
+  console.log(header2)
+  const header1 = <h1 className="header">JSX</h1>
+  console.log(header1)
 }
 
 function NavBar() {
@@ -45,9 +55,29 @@ function MainContent() {
       <p>React is component based (Basicly you solve a puzle)</p>
       <p>React is declarative (What should be done?)</p>
       <p>Imperative - how it should be done?</p>
+      <p>Raect uses JSX - It is javasript with html</p>
     </div>
   );
 }
 
+function APP1() {
+    const root = document.getElementById("root");
+    const navbar = (
+        <div>
+            <nav>
+                <h1>website</h1>
+                <ul>
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contract</li>
+                </ul>
+            </nav>
+        </div>
+    )
+    ReactDOM.render(navbar, root);
+}
+
 //VanilaAPP();
-ReactAPP();
+//CompareJSXWithJS();
+//ReactAPP();
+APP1();
