@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+h1 {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.Navbar {
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #151515;
+  display: flex;
+  padding: 30px 25px;
+  align-items: center;
+}
+
+.Navbar .Logo{
+  align-items: center;
+  display: flex;
+}
+
+.Navbar .Logo img{
+  width: 40px;
+}
+
+.Navbar .Logo h1{
+  color: #3ea4ca;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.Navbar .Content h1{
+  color: #cfcfcf;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.Main {
+  background-image: url(./logo192.png);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position-x: 250%;
+  background-position-y: center;
+  padding: 57px 27px;
+  background-color: #3a3a3a;
+  color: aliceblue;
+}
+
+.Main ul {
+  margin-top: 46px;
+}
+
+.Main ul li{
+  margin-top: 10px;
+}
+
+.Main ul li::marker{
+  color: #3ea4ca;
+}
