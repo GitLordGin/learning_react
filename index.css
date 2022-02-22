@@ -1,0 +1,24 @@
+.nav_itmes ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav_itmes ul li {
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my_img {
+  width: 40px;
+}
+
+.header {
+  background-color: lightgray;
+  border-color: darkgray;
+  border-width: 50px;
+}
